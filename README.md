@@ -1,8 +1,11 @@
 # Usage
-Run the application with two arguments:
+1. Set the relevant environment variables:
 
-1. An array in JSON format
-2. A number higher than 0
+- DIVIDER: The number of nested arrays which should exist in the output
+- INPUTARRAY: The array to be divided by DIVIDER
+
+2. Run `npm install`
+3. Run `node index.js` within the project directory
 
 # Exit Codes
 
@@ -10,7 +13,9 @@ Run the application with two arguments:
 2 = The DIVIDER is not within specifications
 3 = The DIVIDER or INPUTARRAY values are not of the expected type
 
-[1,2,3,4,5],3
-[[1,2][3,4][5]]
+# Testing
+There is testing implemented in the test/ directory using mocha
 
+# CI
+CI makes sure the app runs as expected
 

@@ -86,3 +86,19 @@ it('Should provide the expected number of dividers', () => {
     result.should.have.size(i);
   }
 });
+
+it('Should output DIVIDER-1 equally sized nested arrays', () => {
+  for(var i = 2; i < 10; i++)
+  {
+    var result = test({DIVIDER:i,INPUTARRAY:"[1,2,3,4,5,6,7,8,9,10]"});
+    result.should.be.an.array;
+    result.should.have.size(i);
+    var sizes = []
+    for(var j = 0; j < (result.length - 1); j++)
+    {
+      sizes.push(result[j].length);
+    }
+    var arrayAverageSize = sizes.reduce((acc,cur) => acc + cur, 0) / sizes.length;
+    arrayAverageSize.should.be.eql(sizes[0]);
+  }
+});
