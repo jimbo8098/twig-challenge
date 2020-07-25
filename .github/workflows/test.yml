@@ -29,4 +29,4 @@ jobs:
       run: npx tsc
 
     - name: Test the code
-      run: node test
+      run: npm run test
