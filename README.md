@@ -5,7 +5,8 @@
 - INPUTARRAY: The array to be divided by DIVIDER
 
 2. Run `npm install`
-3. Run `node index.js` within the project directory
+3. Run `npx tsc` to compile the Typescript into Javascript.
+4. Run `node index.js` or `npm start` within the project directory
 
 # Exit Codes
 
