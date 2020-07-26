@@ -30,3 +30,9 @@ jobs:
 
     - name: Test the code
       run: npm run test
+
+    - name: Make sure npm start works
+      run: npm start
+      env:
+        DIVIDER:5
+        INPUTARRAY:[1,2,3,4,5,6,7,8,9,10]
