@@ -4,9 +4,9 @@
   "description": "Run the application with two arguments:",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha app/test",
     "tsc": "tsc",
-    "start": "node index.js"
+    "start": "node app/index.js"
   },
   "repository": {
     "type": "git",
